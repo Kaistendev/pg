@@ -31,7 +31,7 @@ const contactInfo = [
 
 const socialLinks = [
   { icon: 'bi-facebook', url: '#', label: 'Facebook' },
-  { icon: 'bi-twitter', url: '#', label: 'Twitter' },
+  { icon: 'bi-twitter-x', url: '#', label: 'Twitter' },
   { icon: 'bi-instagram', url: '#', label: 'Instagram' },
   { icon: 'bi-whatsapp', url: '#', label: 'WhatsApp' }
 ];
