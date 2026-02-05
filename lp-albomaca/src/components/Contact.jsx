@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import ContactForm from './ContactForm';
 import './Contact.css';
 
 const contactInfo = [
@@ -30,10 +31,10 @@ const contactInfo = [
 ];
 
 const socialLinks = [
-  { icon: 'bi-facebook', url: '#', label: 'Facebook' },
-  { icon: 'bi-twitter-x', url: '#', label: 'Twitter' },
-  { icon: 'bi-instagram', url: '#', label: 'Instagram' },
-  { icon: 'bi-whatsapp', url: '#', label: 'WhatsApp' }
+  { icon: 'bi-facebook', url: 'https://www.facebook.com/share/1FJmWZvkD7/', label: 'Facebook' },
+  { icon: 'bi bi-tiktok', url: 'https://tiktok.com/@planificacionurbalbomaca', label: 'Tiktok' },
+  { icon: 'bi-instagram', url: 'https://www.instagram.com/planificacionurbalbomaca?igsh=MTFwZXJ3eXN6bmdtZg==', label: 'Instagram' },
+ 
 ];
 
 const Contact = () => (
@@ -61,25 +62,7 @@ const Contact = () => (
         ))}
       </Row>
 
-      <div className="contact-cta">
-        <Row className="align-items-center">
-          <Col lg={8} className="mb-4 mb-lg-0">
-            <div className="cta-content">
-              <i className="bi bi-chat-dots-fill"></i>
-              <div>
-                <h3>¿Tienes alguna pregunta o consulta?</h3>
-                <p>Nuestro equipo está listo para ayudarte con cualquier información que necesites sobre trámites y servicios urbanísticos.</p>
-              </div>
-            </div>
-          </Col>
-          <Col lg={4} className="text-lg-end">
-            <a href="mailto:planurbana@casacoima.gob.ve" className="btn btn-primary btn-lg">
-              <i className="bi bi-envelope-fill me-2"></i>
-              Enviar Correo
-            </a>
-          </Col>
-        </Row>
-      </div>
+      <ContactForm />
 
       <div className="social-section text-center">
         <h4>Síguenos en Redes Sociales</h4>

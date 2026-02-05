@@ -5,6 +5,13 @@ import './Hero.css';
 const Hero = () => (
   <header id="home" className="hero-section">
     <div className="hero-overlay"></div>
+    <div className="hero-cintillo-bg">
+      <img 
+        src="/cintillo.png" 
+        alt="Cintillo Oficial - Municipio Casacoima" 
+        className="cintillo-bg-image"
+      />
+    </div>
     <div className="hero-particles">
       <div className="particle"></div>
       <div className="particle"></div>
@@ -68,11 +75,13 @@ const Hero = () => (
       </div>
     </Container>
     
-    <div className="hero-scroll-indicator">
-      <a href="#about" className="scroll-link">
-        <i className="bi bi-chevron-down"></i>
-      </a>
-    </div>
+
+      
+      <div className="hero-scroll-indicator">
+        <a href="#about" className="scroll-link">
+          <i className="bi bi-chevron-down"></i>
+        </a>
+      </div>
   </header>
 );
 

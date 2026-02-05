@@ -1,0 +1,438 @@
+/* Skeleton Loading Styles */
+
+.skeleton-wrapper {
+  width: 100%;
+}
+
+/* Base Skeleton */
+.skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.skeleton::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Hero Skeleton */
+.hero-skeleton {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.skeleton-badge {
+  height: 40px;
+  width: 200px;
+  margin: 0 auto 2rem;
+  border-radius: 50px;
+}
+
+.skeleton-title {
+  height: 80px;
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+}
+
+.skeleton-subtitle {
+  height: 50px;
+  width: 80%;
+  margin: 0 auto 1rem;
+  border-radius: 8px;
+}
+
+.skeleton-tagline {
+  height: 40px;
+  width: 60%;
+  margin: 0 auto 2.5rem;
+  border-radius: 8px;
+}
+
+.hero-buttons-skeleton {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.skeleton-button {
+  height: 50px;
+  width: 180px;
+  border-radius: 50px;
+  background: linear-gradient(90deg, rgba(37, 99, 235, 0.3) 25%, rgba(37, 99, 235, 0.5) 50%, rgba(37, 99, 235, 0.3) 75%);
+}
+
+.skeleton-button-outline {
+  height: 50px;
+  width: 180px;
+  border-radius: 50px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.3) 75%);
+}
+
+.hero-stats-skeleton {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+}
+
+/* Service Card Skeleton */
+.service-card-skeleton {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  height: 280px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid #f0f0f0;
+}
+
+.skeleton-service-icon {
+  height: 70px;
+  width: 70px;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(90deg, rgba(37, 99, 235, 0.3) 25%, rgba(37, 99, 235, 0.5) 50%, rgba(37, 99, 235, 0.3) 75%);
+}
+
+.skeleton-service-title {
+  height: 30px;
+  width: 80%;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.skeleton-service-text {
+  height: 20px;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  border-radius: 6px;
+}
+
+.skeleton-service-text.short {
+  width: 70%;
+}
+
+.skeleton-arrow {
+  height: 30px;
+  width: 30px;
+  border-radius: 6px;
+  margin-top: auto;
+  background: linear-gradient(90deg, rgba(37, 99, 235, 0.3) 25%, rgba(37, 99, 235, 0.5) 50%, rgba(37, 99, 235, 0.3) 75%);
+}
+
+/* Tramite Card Skeleton */
+.tramite-card-skeleton {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  height: 220px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  border: 1px solid #f0f0f0;
+}
+
+.skeleton-tramite-icon {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(90deg, rgba(37, 99, 235, 0.3) 25%, rgba(37, 99, 235, 0.5) 50%, rgba(37, 99, 235, 0.3) 75%);
+}
+
+.skeleton-tramite-title {
+  height: 28px;
+  width: 90%;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.skeleton-tramite-text {
+  height: 18px;
+  width: 100%;
+  border-radius: 6px;
+}
+
+/* Contact Card Skeleton */
+.contact-card-skeleton {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  height: 200px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  border: 1px solid #f0f0f0;
+}
+
+.skeleton-contact-icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin: 0 auto 1.5rem;
+  background: linear-gradient(90deg, rgba(37, 99, 235, 0.3) 25%, rgba(37, 99, 235, 0.5) 50%, rgba(37, 99, 235, 0.3) 75%);
+}
+
+.skeleton-contact-title {
+  height: 24px;
+  width: 60%;
+  margin: 0 auto 1rem;
+  border-radius: 8px;
+}
+
+.skeleton-contact-text {
+  height: 16px;
+  width: 80%;
+  margin: 0 auto 0.5rem;
+  border-radius: 6px;
+}
+
+.skeleton-contact-text.short {
+  width: 60%;
+}
+
+/* Value Card Skeleton */
+.value-card-skeleton {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  height: 250px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  border: 1px solid #f0f0f0;
+}
+
+.skeleton-value-icon {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin: 0 auto 1.5rem;
+  background: linear-gradient(90deg, rgba(37, 99, 235, 0.3) 25%, rgba(37, 99, 235, 0.5) 50%, rgba(37, 99, 235, 0.3) 75%);
+}
+
+.skeleton-value-title {
+  height: 28px;
+  width: 50%;
+  margin: 0 auto 1rem;
+  border-radius: 8px;
+}
+
+.skeleton-value-text {
+  height: 16px;
+  width: 90%;
+  margin: 0 auto 0.5rem;
+  border-radius: 6px;
+}
+
+.skeleton-value-text.short {
+  width: 70%;
+}
+
+/* Stat Item Skeleton */
+.stat-item-skeleton {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.skeleton-stat-icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.3) 75%);
+}
+
+.stat-content-skeleton {
+  text-align: left;
+}
+
+.skeleton-stat-number {
+  height: 32px;
+  width: 60px;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+}
+
+.skeleton-stat-label {
+  height: 14px;
+  width: 120px;
+  border-radius: 6px;
+}
+
+/* Text Skeleton */
+.text-skeleton {
+  width: 100%;
+}
+
+.skeleton-line {
+  height: 16px;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  border-radius: 6px;
+}
+
+.skeleton-line.short {
+  width: 70%;
+}
+
+/* Avatar Skeleton */
+.skeleton-avatar {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+/* Default Skeleton */
+.skeleton-default {
+  height: 200px;
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* Section Skeleton */
+.section-skeleton {
+  padding: 5rem 0;
+  background: #f8f9fa;
+}
+
+.section-header-skeleton {
+  margin-bottom: 3rem;
+}
+
+.skeleton-section-title {
+  height: 48px;
+  width: 400px;
+  margin: 0 auto 1rem;
+  border-radius: 12px;
+}
+
+.skeleton-section-description {
+  height: 24px;
+  width: 600px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.about-content-skeleton {
+  padding: 1rem;
+}
+
+.skeleton-about-image {
+  height: 300px;
+  width: 100%;
+  border-radius: 16px;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+/* Responsive Skeleton */
+@media (max-width: 768px) {
+  .hero-skeleton {
+    padding: 1rem;
+  }
+  
+  .skeleton-title {
+    height: 60px;
+  }
+  
+  .skeleton-subtitle {
+    height: 40px;
+    width: 90%;
+  }
+  
+  .skeleton-tagline {
+    height: 32px;
+    width: 80%;
+  }
+  
+  .hero-buttons-skeleton {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hero-stats-skeleton {
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+  
+  .service-card-skeleton,
+  .tramite-card-skeleton,
+  .contact-card-skeleton,
+  .value-card-skeleton {
+    padding: 1.5rem;
+    height: auto;
+    min-height: 200px;
+  }
+  
+  .section-skeleton {
+    padding: 3rem 0;
+  }
+  
+  .skeleton-section-title {
+    width: 300px;
+    height: 40px;
+  }
+  
+  .skeleton-section-description {
+    width: 90%;
+    height: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .skeleton-badge {
+    width: 150px;
+    height: 35px;
+  }
+  
+  .skeleton-button,
+  .skeleton-button-outline {
+    width: 150px;
+    height: 45px;
+  }
+  
+  .service-card-skeleton,
+  .tramite-card-skeleton,
+  .contact-card-skeleton,
+  .value-card-skeleton {
+    padding: 1rem;
+    margin: 0 10px;
+  }
+}

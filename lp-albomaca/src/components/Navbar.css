@@ -27,6 +27,13 @@
   transform: translateY(-2px);
 }
 
+.navbar-logo {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
 .navbar-brand-custom i {
   font-size: 1.5rem;
   background: var(--gradient-primary);

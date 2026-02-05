@@ -22,7 +22,11 @@ const NavigationBar = () => {
     >
       <Container>
         <Navbar.Brand href="#home" className="navbar-brand-custom">
-          <i className="bi bi-building me-2"></i>
+          <img 
+            src="/logo.jpg" 
+            alt="Planificación Urbana Casacoima" 
+            className="navbar-logo me-2"
+          />
           <span className="brand-text">
             Planificación Urbana <span className="brand-highlight">Casacoima</span>
           </span>
